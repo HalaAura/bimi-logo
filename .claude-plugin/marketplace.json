@@ -1,7 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
   "name": "hala-tools",
-  "owner": { "name": "Hala Alzeat" },
+  "owner": {
+    "name": "Hala Alzeat"
+  },
   "description": "Hala's Claude Code / Cowork toolset",
   "plugins": [
     {
@@ -11,8 +13,8 @@
     },
     {
       "name": "remotion",
-      "source": { "source": "github", "repo": "remotion-dev/claude-code-plugin" },
-      "description": "Official Remotion skills for building programmatic videos with React"
+      "source": "./plugins/remotion",
+      "description": "Official Remotion skills for building programmatic videos with React (copied from remotion-dev/claude-code-plugin, MIT)"
     }
   ]
 }

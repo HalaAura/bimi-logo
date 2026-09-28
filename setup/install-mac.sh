@@ -14,7 +14,9 @@ brew install ffmpeg uv node python@3.12
 
 echo "Installing Whisper (used by the audio-transcription skill)..."
 uv tool install --python 3.12 --with pillow openai-whisper || uv tool upgrade openai-whisper
-python3 -m pip install --user --break-system-packages -q openai-whisper pillow || true
+python3 -m pip install --user -q openai-whisper pillow 2>/dev/null \
+  || python3 -m pip install --user --break-system-packages -q openai-whisper pillow || true
+uv tool update-shell >/dev/null 2>&1 || true
 
 echo "Pre-fetching the MCP servers..."
 uvx markitdown-mcp --help >/dev/null 2>&1 || true
