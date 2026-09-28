@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "markitdown": {
+      "command": "bash",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/bin/with-keys.sh", "uvx", "markitdown-mcp"]
+    },
+    "animotion": {
+      "command": "bash",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/bin/with-keys.sh", "npx", "-y", "animotion-mcp"],
+      "env": { "ANIMOTION_ANALYTICS": "false" }
+    },
+    "gpt-image-2": {
+      "command": "bash",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/bin/with-keys.sh", "npx", "-y", "gpt-image-2-mcp"]
+    },
+    "trends": {
+      "command": "bash",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/bin/with-keys.sh", "uvx", "trends-mcp-server"]
+    }
+  }
+}

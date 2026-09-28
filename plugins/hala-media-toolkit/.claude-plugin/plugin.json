@@ -1,0 +1,9 @@
+{
+  "name": "hala-media-toolkit",
+  "version": "1.0.0",
+  "description": "MarkItDown, Animotion, gpt-image-2 and Trends MCP servers, plus motion-graphics, Whisper audio-transcription and test-case-generator skills.",
+  "author": { "name": "Hala Alzeat" },
+  "repository": "https://github.com/halaaura/bimi-logo",
+  "license": "MIT",
+  "keywords": ["mcp", "video", "image", "trends", "whisper", "markdown"]
+}

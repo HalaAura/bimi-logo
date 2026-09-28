@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
+  "name": "hala-tools",
+  "owner": { "name": "Hala Alzeat" },
+  "description": "Hala's Claude Code / Cowork toolset",
+  "plugins": [
+    {
+      "name": "hala-media-toolkit",
+      "source": "./plugins/hala-media-toolkit",
+      "description": "MarkItDown, Animotion, gpt-image-2 and Trends MCPs + motion-graphics, Whisper transcription and test-case skills"
+    },
+    {
+      "name": "remotion",
+      "source": { "source": "github", "repo": "remotion-dev/claude-code-plugin" },
+      "description": "Official Remotion skills for building programmatic videos with React"
+    }
+  ]
+}
